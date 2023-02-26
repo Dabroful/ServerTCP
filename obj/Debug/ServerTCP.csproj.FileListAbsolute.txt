@@ -1,0 +1,7 @@
+D:\Разработка\C#\ServerTCP\bin\Debug\ServerTCP.exe
+D:\Разработка\C#\ServerTCP\bin\Debug\ServerTCP.pdb
+D:\Разработка\C#\ServerTCP\obj\Debug\ServerTCP.csproj.AssemblyReference.cache
+D:\Разработка\C#\ServerTCP\obj\Debug\ServerTCP.csproj.SuggestedBindingRedirects.cache
+D:\Разработка\C#\ServerTCP\obj\Debug\ServerTCP.csproj.CoreCompileInputs.cache
+D:\Разработка\C#\ServerTCP\obj\Debug\ServerTCP.exe
+D:\Разработка\C#\ServerTCP\obj\Debug\ServerTCP.pdb
