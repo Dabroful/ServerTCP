@@ -10,17 +10,17 @@ namespace ServerTCP
     {
         public static void Main(string[] args)
         {
-            const string ip = "127.0.0.1";
+            const string ip = "127.0.0.1";                                                               //чтобы сделать соединение нужны ip-адрес и порт
             const int port = 8080;
 
-            var tcpEndPoint = new IPEndPoint(IPAddress.Parse(ip), port);
-            var tcpSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-            tcpSocket.Bind(tcpEndPoint);
-            tcpSocket.Listen(5);
+            var tcpEndPoint = new IPEndPoint(IPAddress.Parse(ip), port);                                 //точка подклюения. У одного сервера может быть несколько endPoint.
+            var tcpSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp); //сокет - это дырка\дверь, через которую можно заходить. Для tcp аргументы не меняются
+            tcpSocket.Bind(tcpEndPoint);                                                                 //указываем, что этому сокету нужно слушать именно этот порт
+            tcpSocket.Listen(5);                                                                   //запускаем сокет на прослушивание. 5 - это кол-во клиентов для подключения
 
-            while (true)
+            while (true)                                                                                  //процесс просушивани. Должен быть бесконечным
             {
-                var listener = tcpSocket.Accept();
+                var listener = tcpSocket.Accept();                                                  //
                 var buffer = new byte[256];
                 var size = 0;
                 var data = new StringBuilder();
@@ -37,6 +37,8 @@ namespace ServerTCP
                 
                 listener.Shutdown(SocketShutdown.Both);
                 listener.Close();
+
+                Console.ReadLine();
             }
         }
     }

@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServerTCP", "ServerTCP.csproj", "{972E318A-3B4A-4E7A-955F-47331DCBB545}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientTCP", "ClientTCP\ClientTCP.csproj", "{FC2B4647-278B-4F6C-AFE1-35AB6906D64F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{972E318A-3B4A-4E7A-955F-47331DCBB545}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{972E318A-3B4A-4E7A-955F-47331DCBB545}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{972E318A-3B4A-4E7A-955F-47331DCBB545}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC2B4647-278B-4F6C-AFE1-35AB6906D64F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC2B4647-278B-4F6C-AFE1-35AB6906D64F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC2B4647-278B-4F6C-AFE1-35AB6906D64F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC2B4647-278B-4F6C-AFE1-35AB6906D64F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
